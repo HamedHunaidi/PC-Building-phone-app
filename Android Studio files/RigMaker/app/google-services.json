@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "378401432844",
+    "project_id": "rig-maker",
+    "storage_bucket": "rig-maker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:378401432844:android:2777f85b7de521b4a89529",
+        "android_client_info": {
+          "package_name": "com.example.rigmaker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "378401432844-prns4i46mo8lqienbpr8d0db66sk1nj9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGO7Yc9pF6aI-5i6ME_zNVd7L9Lb7NbzM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "378401432844-prns4i46mo8lqienbpr8d0db66sk1nj9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

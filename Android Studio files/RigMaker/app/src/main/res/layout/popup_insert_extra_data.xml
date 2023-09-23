@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/et_name_of_build"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Name of Build"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switch_suggested_build"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:checked="true"
+        android:text="Suggested Build"
+        app:layout_constraintEnd_toEndOf="@+id/et_name_of_build"
+        app:layout_constraintStart_toStartOf="@+id/et_name_of_build"
+        app:layout_constraintTop_toBottomOf="@+id/et_name_of_build" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switch_community_build"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Community Build"
+        android:checked="true"
+        app:layout_constraintEnd_toEndOf="@+id/switch_suggested_build"
+        app:layout_constraintStart_toStartOf="@+id/switch_suggested_build"
+        app:layout_constraintTop_toBottomOf="@+id/switch_suggested_build" />
+
+    <EditText
+        android:id="@+id/et_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Enter Author"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/switch_community_build"
+        app:layout_constraintStart_toStartOf="@+id/switch_community_build"
+        app:layout_constraintTop_toBottomOf="@+id/switch_community_build" />
+
+    <Button
+        android:id="@+id/btn_update_rig_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Update Rig"
+        app:layout_constraintEnd_toEndOf="@+id/et_author"
+        app:layout_constraintStart_toStartOf="@+id/et_author"
+        app:layout_constraintTop_toBottomOf="@+id/et_author" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        app:layout_constraintEnd_toEndOf="@+id/btn_update_rig_data"
+        app:layout_constraintStart_toStartOf="@+id/btn_update_rig_data"
+        app:layout_constraintTop_toBottomOf="@+id/btn_update_rig_data" />
+</androidx.constraintlayout.widget.ConstraintLayout>
